@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background: #3498db; /* Blue header */
+    color: white; /* White text in header */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #2c3e50; /* Darker color for headings */
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Merge table borders */
+    margin: 20px 0; /* Space above and below the table */
+    background: white; /* White background for the table */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners are visible */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+th, td {
+    padding: 12px; /* Padding inside table cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Light gray border between rows */
+}
+
+th {
+    background-color: #3498db; /* Blue background for header */
+    color: white; /* White text for header */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Light gray on row hover */
+}
+
+/* No Records Message */
+p {
+    text-align: center; /* Center align the no records message */
+    font-size: 18px; /* Larger font for emphasis */
+    color: #e74c3c; /* Red color for error message */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    table, th, td {
+        display: block; /* Stack table elements on small screens */
+        width: 100%; /* Full width */
+    }
+    
+    th {
+        position: absolute; /* Position header cells */
+        left: -9999px; /* Hide off-screen */
+    }
+
+    tr {
+        margin-bottom: 15px; /* Space between rows */
+    }
+
+    td {
+        text-align: right; /* Right align text in cells */
+        padding-left: 50%; /* Indent for readability */
+        position: relative; /* Set position for pseudo-elements */
+    }
+
+    td::before {
+        content: attr(data-label); /* Use data-label for header in small screens */
+        position: absolute; /* Position absolutely */
+        left: 0; /* Align to left */
+        width: 50%; /* Half width */
+        padding-left: 10px; /* Padding inside */
+        text-align: left; /* Left align */
+        font-weight: bold; /* Bold text */
+    }
+}
+body {
+    background-image: url('your-background-image.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full height */
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif; /* Font family for the page */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    margin-top: 20px; /* Space above the heading */
+}
+
+table {
+    width: 80%; /* Table width */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse; /* Collapse borders */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for table */
+    border-radius: 8px; /* Rounded corners */
+}
+
+th, td {
+    padding: 10px; /* Cell padding */
+    border: 1px solid #ccc; /* Cell border */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f2f2f2; /* Header background */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Row hover effect */
+}

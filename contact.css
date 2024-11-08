@@ -1,0 +1,101 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+section {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contact-photo {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%; /* Makes the photo circular */
+    margin-right: 20px;
+}
+
+.contact-info div {
+    max-width: 600px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Link Styles */
+a {
+    color: #f0a500; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .contact-photo {
+        margin-bottom: 15px;
+    }
+}
